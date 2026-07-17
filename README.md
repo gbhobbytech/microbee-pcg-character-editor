@@ -13,7 +13,21 @@ A desktop editor for designing one 8×16 Microbee programmable character and con
 - Copy the generated BASIC `DATA` statement
 - Load a diagnostic diagonal for real-machine bit-order testing
 
-## Run from source
+## Platform support
+
+The source code is cross-platform and can run on:
+
+- macOS
+- Windows
+- Linux
+
+Python 3 and Tkinter are required. Packaged applications must be built separately on each operating system:
+
+- macOS builds produce a `.app`
+- Windows builds produce an `.exe`
+- Linux builds produce a native executable
+
+The included `build_mac.command` script builds the macOS version. Windows and Linux build scripts may be added in future releases.## Run from source
 
 Python 3 with Tkinter is required. No third-party Python packages are needed to run the editor.
 

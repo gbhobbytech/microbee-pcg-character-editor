@@ -59,23 +59,6 @@ This project does not currently code-sign or notarise the app. If macOS blocks t
 - Quit: Command-Q
 
 Control-based shortcuts remain available when running the source on Windows or Linux.
-
-## Create the GitHub repository from Terminal
-
-After creating an empty GitHub repository named `microbee-pcg-character-editor`, run these commands from this project folder:
-
-```bash
-git init
-git add .
-git commit -m "Initial release of Microbee PCG Character Editor"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/microbee-pcg-character-editor.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your GitHub username. If you use GitHub CLI, you can create and push the repository in one step after committing:
-
-```bash
 gh repo create microbee-pcg-character-editor --public --source=. --remote=origin --push
 ```
 

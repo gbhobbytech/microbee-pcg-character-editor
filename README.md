@@ -15,25 +15,27 @@ A desktop editor for designing one 8×16 Microbee programmable character and con
 
 ## Platform support
 
-The source code is cross-platform and can run on:
+The Microbee PCG Character Editor is written in Python using Tkinter and is designed to run on:
 
-- macOS
 - Windows
+- macOS
 - Linux
 
-Python 3 and Tkinter are required. Packaged applications must be built separately on each operating system:
+If Python 3 and Tkinter are installed, the same source file can be run directly on any of these platforms.
 
-- macOS builds produce a `.app`
-- Windows builds produce an `.exe`
-- Linux builds produce a native executable
+No third-party Python packages are required to use the editor.
 
-The included `build_mac.command` script builds the macOS version. Windows and Linux build scripts may be added in future releases.## Run from source
+## Run from source
 
-Python 3 with Tkinter is required. No third-party Python packages are needed to run the editor.
+Clone or download this repository, then run:
 
 ```bash
 python3 microbee_pcg_editor.py
 ```
+
+On some systems, Python may be installed as `python` rather than `python3`.
+
+Standalone packaged versions can also be created, but they must be built separately for each operating system. The repository currently includes a macOS build script.
 
 ## Build the macOS app
 
@@ -73,8 +75,6 @@ This project does not currently code-sign or notarise the app. If macOS blocks t
 - Quit: Command-Q
 
 Control-based shortcuts remain available when running the source on Windows or Linux.
-gh repo create microbee-pcg-character-editor --public --source=. --remote=origin --push
-```
 
 ## Current version
 

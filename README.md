@@ -2,6 +2,8 @@
 
 A desktop editor for designing one 8×16 Microbee programmable character and converting it to or from a 16-byte MicroWorld BASIC `DATA` statement.
 
+![Microbee PCG Character Editor](assets/pcg-editor.png)
+
 ## Features
 
 - Paint or erase pixels by clicking and dragging
